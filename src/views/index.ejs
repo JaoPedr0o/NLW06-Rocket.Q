@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style/home.css">
+    <link rel="stylesheet" href="/style/global.css">
+</head>
+<body>
+    <div id="home" class="content">
+        <header>
+        <a href="/"><img src="/images/logo.svg" alt="Rocket.Q Logo"/></a>
+        </header>
+        <div id="bg">
+            <div class="ball top"></div>
+            <div class="ball bottom"></div>
+        </div>
+        <main style = "display: flex;" >
+            
+            <div class="container">
+                <!-- Vai renderizar a parte correta -->
+                <%- include(`parts/${page}`) %>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>
